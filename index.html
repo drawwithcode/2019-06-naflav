@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-    <style> body {padding: 0; margin: 0;} </style>
-    <script src="p5.min.js"></script>
-    <!-- <script src="addons/p5.sound.min.js"></script> -->
-    <script src="sketch.js"></script>
-  </head>
-  <body>
-  </body>
+
+<head>
+  <style>
+    body {
+      font-family: "Roboto Mono";
+      background: #FF6347;
+    }
+
+    div.caixinha {
+      height: 10em;
+      position: relative
+    }
+
+    div.caixinha p {
+      text-align: center;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%)
+    }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <script src="p5.min.js"></script>
+  <script src="addons/p5.dom.min.js"></script>
+  <script src="addons/p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+
+
+  <div class=caixinha>
+    <p><br><br><br><br><br><br><br><br><br><br><br>
+      This is the latest automated pizza delivery model available in the market:
+      <br><br><b><i>"PIZZA BOY 3000"</b></i><br>
+      <br>Press "GO" to activate his JOURNEY. <b>BUT</b>, this version has a technical problem.
+      <br>You have to press "STOP" as soon as he reaches the delivery place, so he can <br>deliver and teleport back to the Pizzeria... <br>Or else he will keep the pizza to himself.
+      <br><br>
+      <br><input type="button" value="GO!" onclick="moveRight();" />
+      <input type="button" value="STOP!" onclick="stop();" /></p>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br>
+  <img src="/space.png" />
+  <img src="/pizzaria.png" style="width:300px;" />
+  <img id="myPizzaman" src="/pizzaman.png" width="150px" />
+
+  <img src="/casa.png" style="position:absolute; right:400px; top:374px; width:300px; border:none;" />
+
+
+
+
+
+
+</body>
+
 </html>
